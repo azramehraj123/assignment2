@@ -1,0 +1,133 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color:rgb(255, 248, 220);
+    border-bottom: 5px solid rgba(196, 255, 246, 0.797);
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+
+}
+nav{
+    flex-grow: 1;
+    text-align: center;
+}
+nav>ul{
+    display: inline-flex;
+    list-style: none;
+    gap:20px
+}
+nav>ul>li{
+    margin: 10px;
+}
+nav>ul>li>a{
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-size: 20px;
+}
+.header-right{
+    display: flex;
+    align-items: right;
+    gap: 15px;
+}
+.username{
+    padding: 8px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor:pointer;
+}
+.container{
+    display: flex;
+    /* to make imgs at right nd content at left */
+    justify-content: space-evenly;
+    align-items: center;
+    /* min height is necc to make this workchere */
+    min-height: 70vh;
+    gap: 2px;
+    background-color:rgba(220, 249, 255, 0.645)
+
+}
+.left{
+    flex-basis: 30%;
+    margin: 20px;
+    font-size: 25px;
+  
+   
+
+}
+h2{
+    color: rgb(66, 65, 65);
+   
+    font-size: 60px;
+    margin-bottom: 5px;
+
+}
+h3{
+    color: rgb(0, 195, 255);
+    font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+    
+
+
+p{
+    font-family: cursive;
+    margin: 1px;
+    padding: 0,4%;
+    color: grey;
+    margin-top: 0px;
+     margin-bottom: 50px;
+}
+
+
+.right{
+    /* flex:1; */
+   text-align: center;
+   flex-basis: 60%;
+  
+   
+}
+.nannu{
+    display:flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 500px;
+    margin-top: 0px;
+}
+.book{
+    padding: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 20%;
+    cursor:pointer;
+     width: 300px;
+}
+
+
+@media(max-width:1024px){
+    .container{
+        flex-direction:column;
+         }   
+        .left h2{
+            font-size: 1.5rem;
+        }
+        .right{
+            width:95%
+        }
+        /* jab screen choti hogi
+        tab right taraf 95%of screen lega */
+       /* .childimgs{
+        grid-row: span 1;
+        grid-column: span 3;
+    
+       } */
+    }
